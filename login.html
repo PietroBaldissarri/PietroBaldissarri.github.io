@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sports CRM</title>
+
+    <link href="foglio2_css.css" rel="stylesheet">
+    <link href="foglio_css.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Epic Neural Background -->
+    <div class="neural-background"></div>
+    
+    <!-- Floating Geometric Shapes -->
+    <div class="geometric-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Neural Network Lines -->
+    <div class="neural-lines">
+        <div class="neural-line"></div>
+        <div class="neural-line"></div>
+        <div class="neural-line"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="glass">
+        <nav>
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#e0a3ff"/>
+                            <stop offset="50%" style="stop-color:#ff69b4"/>
+                            <stop offset="100%" style="stop-color:#9370db"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="30" r="8" fill="url(#logoGradient)" opacity="0.8">
+                        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="30" cy="60" r="6" fill="url(#logoGradient)" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="70" cy="65" r="7" fill="url(#logoGradient)" opacity="0.7">
+                        <animate attributeName="opacity" values="0.7;1;0.7" dur="1.8s" repeatCount="indefinite"/>
+                    </circle>
+                    <line x1="50" y1="30" x2="30" y2="60" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+                    </line>
+                    <line x1="50" y1="30" x2="70" y2="65" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
+                    </line>
+                    <line x1="30" y1="60" x2="70" y2="65" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite"/>
+                    </line>
+                </svg>
+                SPORTS CRM
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
+                <li><a href="register.html">Registrati</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-form glass" style="max-width: 450px; margin: 0 auto;">
+                <h3 style="text-align: center; margin-bottom: 30px; color: #e0a3ff;">Accedi a Sports CRM</h3>
+                
+                <form id="loginForm">
+                    <div class="form-group">
+                        <input type="text" id="username" placeholder="Nome Utente">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="submit-btn">ACCEDI</button>
+                </form>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="register.html" style="color: #e0a3ff; text-decoration: underline;">
+                        Non hai un account? Registrati
+                    </a>
+                </div>
+
+                <div id="message" style="margin-top: 20px; padding: 10px; border-radius: 5px; text-align: center; display: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let currentUser = null;
+
+        const loginForm = document.getElementById('loginForm');
+        const message = document.getElementById('message');
+
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            
+            currentUser = {
+                username: username,
+                password: password,
+                loginTime: new Date().toISOString()
+            };
+            
+            showMessage('Login effettuato! Benvenuto ' + username, 'success');
+            loginForm.reset();
+           
+        });
+
+        function showMessage(text, type) {
+            message.textContent = text;
+            message.style.display = 'block';
+            message.style.background = type === 'success' ? 'rgba(34, 197, 94, 0.2)' : 'rgba(239, 68, 68, 0.2)';
+            message.style.border = '1px solid ' + (type === 'success' ? 'rgba(34, 197, 94, 0.3)' : 'rgba(239, 68, 68, 0.3)');
+            message.style.color = type === 'success' ? '#22c55e' : '#ef4444';
+        }
+
+        window.getCurrentUser = () => currentUser;
+    </script>
+</body>
+</html>

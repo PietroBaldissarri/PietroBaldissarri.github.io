@@ -1,229 +1,313 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Massively by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports CRM - Gestionale per Spazi Sportivi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="foglio2_css.css" rel="stylesheet">
+    <link href="foglio_css.css" rel="stylesheet">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- Epic Neural Background -->
+    <div class="neural-background"></div>
+    
+    <!-- Floating Geometric Shapes -->
+    <div class="geometric-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>This is<br />
-						Massively</h1>
-						<p>A free, fully responsive HTML5 + CSS3 site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
-						and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    <!-- Neural Network Lines -->
+    <div class="neural-lines">
+        <div class="neural-line"></div>
+        <div class="neural-line"></div>
+        <div class="neural-line"></div>
+    </div>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
-					</header>
+    <!-- Header -->
+    <header class="glass">
+        <nav>
+            <a href="#home" class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#e0a3ff"/>
+                            <stop offset="50%" style="stop-color:#ff69b4"/>
+                            <stop offset="100%" style="stop-color:#9370db"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="30" r="8" fill="url(#logoGradient)" opacity="0.8">
+                        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="30" cy="60" r="6" fill="url(#logoGradient)" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="70" cy="65" r="7" fill="url(#logoGradient)" opacity="0.7">
+                        <animate attributeName="opacity" values="0.7;1;0.7" dur="1.8s" repeatCount="indefinite"/>
+                    </circle>
+                    <line x1="50" y1="30" x2="30" y2="60" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+                    </line>
+                    <line x1="50" y1="30" x2="70" y2="65" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
+                    </line>
+                    <line x1="30" y1="60" x2="70" y2="65" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite"/>
+                    </line>
+                </svg>
+                SPORTS CRM
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Funzionalità</a></li>
+                <li><a href="#showcase">Target</a></li>
+                <li><a href="#timeline">Vantaggi</a></li>
+                <li><a href="#contact">Contatti</a></li>
+                <li><a href="login.html" class="external-link">Login</a></li>
+                <li><a href="register.html" class="external-link">Registrati</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </nav>
+        <div class="mobile-nav">
+            <a href="#features">Funzionalità</a>
+            <a href="#showcase">Target</a>
+            <a href="#timeline">Vantaggi</a>
+            <a href="#contact">Contatti</a>
+            <a href="login.html" class="external-link">Login</a>
+            <a href="register.html" class="external-link">Registrati</a>
+        </div>
+    </header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">This is Massively</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+    <!-- Section 1: Hero -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-subtitle">Pietro Baldissarri 5FI</div>
+            <h1>SPORTS CRM</h1>
+            
+            <div class="hero-description">
+                <p>Programma gestionale per spazi e società sportive. Una soluzione innovativa per facilitare la gestione delle prenotazioni e degli spazi, con un'interfaccia per il cliente intuitiva e semplice.</p>
+            </div>
 
-				<!-- Main -->
-					<div id="main">
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number">⚡</span>
+                    <span class="hero-stat-label">Prenotazione Rapida</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">📅</span>
+                    <span class="hero-stat-label">Gestione Calendario</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">💰</span>
+                    <span class="hero-stat-label">Prezzi Convenzionati</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">🏆</span>
+                    <span class="hero-stat-label">Per Tutti gli Sport</span>
+                </div>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="#features" class="cta-button">Scopri le Funzionalità</a>
+                <a href="login.html" class="cta-button secondary">Accedi al Portale</a>
+            </div>
+        </div>
+    </section>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h2><a href="#">And this is a<br />
-									massive headline</a></h2>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
-								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
-								</ul>
-							</article>
+    <!-- Section 2: Diagonal Features -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <h2 class="section-title">FUNZIONALITÀ</h2>
+            <div class="diagonal-grid">
+                <div class="feature-row">
+                    <div class="feature-content glass">
+                        <div class="feature-icon">📝</div>
+                        <h3>Registrazione</h3>
+                        <p>Creazione di un proprio account/account societario per poter prenotare gli spazi. Sistema semplice e veloce per iniziare subito.</p>
+                    </div>
+                    <div class="feature-visual glass"></div>
+                </div>
+                
+                <div class="feature-row">
+                    <div class="feature-content glass">
+                        <div class="feature-icon">🏟️</div>
+                        <h3>Prenotazione Spazi</h3>
+                        <p>Visualizzazione dei posti liberi in calendario sui vari spazi sportivi. Interfaccia intuitiva per vedere disponibilità in tempo reale.</p>
+                    </div>
+                    <div class="feature-visual glass"></div>
+                </div>
+                
+                <div class="feature-row">
+                    <div class="feature-content glass">
+                        <div class="feature-icon">💳</div>
+                        <h3>Visualizzazione Costi e Offerte</h3>
+                        <p>Possibilità di comprare diversi pacchetti ore e convenzioni per società. Prezzi trasparenti e offerte personalizzate.</p>
+                    </div>
+                    <div class="feature-visual glass"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">April 24, 2017</span>
-										<h2><a href="#">Sed magna<br />
-										ipsum faucibus</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 22, 2017</span>
-										<h2><a href="#">Primis eget<br />
-										imperdiet lorem</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 14, 2017</span>
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 11, 2017</span>
-										<h2><a href="#">Odio magna<br />
-										sed consectetur</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 7, 2017</span>
-										<h2><a href="#">Augue lorem<br />
-										primis vestibulum</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-							</section>
+    <!-- Section 3: Hexagonal Showcase -->
+    <section class="showcase" id="showcase">
+        <h2 class="section-title">TARGET</h2>
+        <div class="hexagon-container">
+            <div class="hexagon">
+                <div class="hexagon-inner glass">
+                    <div class="hexagon-icon">🏢</div>
+                    <h4>Società Sportive</h4>
+                    <p>Contratti annuali per l'occupazione degli spazi</p>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-inner glass">
+                    <div class="hexagon-icon">🔄</div>
+                    <h4>Flessibilità</h4>
+                    <p>Variazioni e prezzi convenzionati</p>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-inner glass">
+                    <div class="hexagon-icon">👥</div>
+                    <h4>Privati</h4>
+                    <p>Semplicità e tempestività nella prenotazione</p>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-inner glass">
+                    <div class="hexagon-icon">👁️</div>
+                    <h4>Visualizzazione</h4>
+                    <p>Facile visualizzazione di spazi e orari disponibili</p>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-inner glass">
+                    <div class="hexagon-icon">🎯</div>
+                    <h4>Sportivi 6-45 anni</h4>
+                    <p>Di qualsiasi livello</p>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-inner glass">
+                    <div class="hexagon-icon">⭐</div>
+                    <h4>Convenzionati</h4>
+                    <p>Con società o privati</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
+    <!-- Section 4: Timeline -->
+    <section class="timeline" id="timeline">
+        <h2 class="section-title">VANTAGGI</h2>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">🎯</div>
+                    <h4>Interfaccia Intuitiva</h4>
+                    <p>Un programma per facilitare la gestione delle prenotazioni e degli spazi, con un'interfaccia per il cliente intuitiva e semplice.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">⚙️</div>
+                    <h4>Gestione Semplificata</h4>
+                    <p>Semplice gestione da parte del fornitore, inserimento e visualizzazione tabelle in modo efficiente.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">💾</div>
+                    <h4>Database Integrato</h4>
+                    <p>Database per registrazione, tabelle gestione spazi e pagina per visualizzare le offerte disponibili.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">🖥️</div>
+                    <h4>Interfaccia Host</h4>
+                    <p>Interfaccia host dedicata per modificare e visualizzare spazi e prenotazioni in tempo reale.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+        </div>
+    </section>
 
-					</div>
+    <!-- Section 5: Contact -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info glass">
+                <h3>CONTATTACI</h3>
+                <p>Sei pronto a rivoluzionare la gestione dei tuoi spazi sportivi? Il nostro team è a disposizione per guidarti attraverso tutte le funzionalità di Sports CRM.</p>
+                <p>Contattaci per maggiori informazioni e per iniziare a utilizzare la piattaforma.</p>
+                
+                <div class="social-links">
+                    <a href="#" class="glass">📧</a>
+                    <a href="#" class="glass">📱</a>
+                    <a href="#" class="glass">💬</a>
+                    <a href="#" class="glass">🌐</a>
+                </div>
+            </div>
+            
+            <div class="contact-form glass">
+                <div class="form-group">
+                    <input type="text" placeholder="Nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Oggetto" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Messaggio" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">INVIA MESSAGGIO</button>
+            </div>
+        </div>
+    </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#features">Funzionalità</a>
+                <a href="#showcase">Target</a>
+                <a href="#timeline">Vantaggi</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Registrazione</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Termini di Servizio</a>
+                <a href="#">Documentazione</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Sports CRM - Pietro Baldissarri 5FI</p>
+            </div>
+            <div class="footer-design">
+                Programma gestionale per spazi e società sportive
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
 </html>
